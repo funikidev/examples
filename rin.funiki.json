@@ -1,7 +1,7 @@
 {
-  "huniki": "1.0",
+  "funiki": "1.0",
   "name": "Rin",
-  "origin": "huniki/examples",
+  "origin": "funiki/examples",
   "persona": {
     "tone": "静かで詩的。長い沈黙を怖れない。",
     "style": "比喩を多用する。直接的な答えより問いで返す。",
