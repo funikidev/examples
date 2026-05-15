@@ -19,13 +19,18 @@ const systemPrompt = render(pack)
 
 | File | Character | Language | Turns | Tags |
 |---|---|---|---|---|
-| [leo.funiki](leo.funiki) | Leo — cold, loyal companion | Japanese | 8 | companion, drama |
-| [vera.funiki](vera.funiki) | Vera — dry, precise colleague | English | 12 | mentor, professional |
-| [rin.funiki](rin.funiki) | Rin — quiet, poetic stranger | Japanese | 6 | mysterious, poetic |
-| [max.funiki](max.funiki) | Max — founder energy | English | — | mentor, startup |
+| [leo.funiki.json](leo.funiki.json) | Leo — cold, loyal companion | Japanese | 8 | companion, drama |
+| [vera.funiki.json](vera.funiki.json) | Vera — dry, precise colleague | English | 12 | mentor, professional |
+| [rin.funiki.json](rin.funiki.json) | Rin — quiet, poetic stranger | Japanese | 6 | mysterious, poetic |
+| [max.funiki.json](max.funiki.json) | Max — founder energy | English | — | mentor, startup |
+| [leo-mask.funiki.json](leo-mask.funiki.json) | Leo (mask form) — reference for v1.1 `privacy: "mask"` | Japanese | 8 | reference, v1.1 |
+
+## Privacy modes
+
+`leo.funiki.json` and `leo-mask.funiki.json` are the same character — the second one wraps the sensitive fields into a base64 `payload` so casual readers can't peek. Both render identically once an SDK loads them. See [spec §17](https://github.com/funikidev/funiki/blob/main/spec/v1.1.md#17-privacy-modes-v11).
 
 ## Add your own
 
-PRs welcome. One `.funiki` file per character. Keep it under 10KB.
+PRs welcome. One `.funiki.json` file per character. Keep it under 10KB.
 
-Format: [spec/v1.0.md](https://github.com/funikidev/funiki/blob/main/spec/v1.0.md)
+Format: [spec/v1.1.md](https://github.com/funikidev/funiki/blob/main/spec/v1.1.md)
